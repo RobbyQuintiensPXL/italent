@@ -4,5 +4,6 @@ export class Activity {
   imgThumb: string;
   imgOne: string;
   imgTwo: string;
+  imgThree?: string;
   description: string;
 }

@@ -23,6 +23,10 @@
                   <img class="img-fluid rounded mb-5 max-height-modal extra-padding" src="{{activity.imgTwo}}"
                        alt="{{activity.name}}"/>
                 </div>
+                <div class="column" *ngIf="activity.imgThree != null">
+                  <img class="img-fluid rounded mb-5 max-height-modal extra-padding" src="{{activity.imgThree}}"
+                       alt="{{activity.name}}"/>
+                </div>
               </div>
               <!-- Portfolio Modal - Text-->
               <p class="mb-5">{{activity.description}}</p>
