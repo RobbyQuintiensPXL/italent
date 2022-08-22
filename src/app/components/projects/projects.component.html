@@ -1,0 +1,11 @@
+<section class="page-section projects" id="projects">
+  <div class="container">
+    <!-- project Section Heading-->
+    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">
+      Projects</h2>
+    <div class="row justify-content-center">
+      <app-activity *ngFor="let project of projects" [activity]="project"></app-activity>
+    </div>
+
+  </div>
+</section>

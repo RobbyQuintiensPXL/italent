@@ -1,0 +1,13 @@
+.container {
+  padding-top: 2rem;
+}
+
+
+.smaller {
+  font-size: 18pt;
+  color: red;
+}
+
+.crossed-out {
+  text-decoration: line-through red;
+}

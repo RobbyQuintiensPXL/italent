@@ -1,0 +1,39 @@
+<div class="col-lg-3 m-3 mb-0 activity" data-toggle="modal" (click)="modal.show()">
+  <img class="img-fluid max-height" src="{{activity.imgThumb}}" alt="{{activity.name}}"/>
+  <h4 class="text-center">{{activity.name}}</h4>
+</div>
+
+<div mdbModal #modal="mdbModal" class="portfolio-modal modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <!-- Portfolio Modal - Title-->
+              <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"
+                  id="portfolioModal1Label">{{activity.name}}</h2>
+              <!-- Portfolio Modal - Image-->
+              <div class="row">
+                <div class="column">
+                  <img class="img-fluid rounded mb-5 max-height-modal extra-padding" src="{{activity.imgOne}}"
+                       alt="{{activity.name}}"/>
+                </div>
+                <div class="column">
+                  <img class="img-fluid rounded mb-5 max-height-modal extra-padding" src="{{activity.imgTwo}}"
+                       alt="{{activity.name}}"/>
+                </div>
+              </div>
+              <!-- Portfolio Modal - Text-->
+              <p class="mb-5">{{activity.description}}</p>
+              <button class="btn btn-primary" data-dismiss="modal" (click)="modal.hide()">
+                <i class="fas fa-times fa-fw"></i>
+                Close Window
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

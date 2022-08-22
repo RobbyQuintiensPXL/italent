@@ -1,0 +1,42 @@
+:host{
+  display: contents;
+}
+
+.activity{
+  cursor: pointer;
+}
+
+.hover-shadow:hover,
+.hover-shadow:focus {
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.max-height {
+  max-height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-height-modal {
+  max-height: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.extra-padding {
+  padding-top: 2rem;
+}
+
+.row {
+  display: flex;
+  min-width: 500px;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}

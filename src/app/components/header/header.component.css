@@ -1,0 +1,31 @@
+.masthead {
+  padding-top: calc(5rem + 74px) !important;
+  padding-bottom: 5rem !important;
+}
+.masthead .masthead-heading {
+  font-size: 2.75rem;
+  line-height: 2.75rem;
+}
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    padding-top: calc(5rem + 80px);
+    padding-bottom: 5rem;
+  }
+  .masthead .masthead-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .masthead .masthead-subheading {
+    font-size: 1.5rem;
+  }
+}
+
+a.primary-background:hover, a.primary-background:focus,
+button.primary-background:hover,
+button.primary-background:focus {
+  background-color: #b6974d !important;
+}
