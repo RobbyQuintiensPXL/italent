@@ -30,9 +30,15 @@ export class InMemoryDataService implements InMemoryDbService {
         imgThumb: 'assets/img/projects/aws.jpeg',
         imgOne: 'assets/img/projects/AWS01.png',
         imgTwo: 'assets/img/projects/AWS02.png',
-        description: 'If previous mentioned hotel applicaton needed to be hosted, it is necessary that the code needs to deployed ' +
-          'somewhere. Therefor I chose AWS to create a complete pipeline. This pipeline is connected to SonarCloud for code quality to provide ' +
-          'valid production code.'
+        description: 'If previous mentioned hotel applicaton needed to be hosted, it is necessary that the project needs to deployed somewhere. Therefor I chose AWS to create a complete pipeline. This pipeline is connected to SonarCloud for code quality.\n' +
+          '\n' +
+          'AWS CodePipeline is a fully managed continuous delivery service. With this service you can automate your release pipeline for application and infrastructure updates.\n' +
+          '\n' +
+          'This pipeline was build up with an envisioned architecture where tested features/branches can be deployed directly to a UAT-environment or production environment. The pipeline source (CodeCommit) retrieves its code from Github, then it creates an artifact (CodeArtifact) of that code which will be used by the build phase (CodeBuild). The CodeBuild consists of a YAML-file containing steps of this build. The first steps of the build are to run the artifact, checking if there are no build fails included and all tests succeed. Another one of these steps is the set quality gate of SonarCloud. If one of these steps fails, the whole pipeline will fail. This will ensure you that a specific minimum set of requirements must be achieved.\n' +
+          '\n' +
+          'I chose this technology because it’s Important to provide quality code. A company/project must be protected against sloppy or breakable code, especially if there is an architecture where developed features are deployed to a UAT-environment or production environment.\n' +
+          '\n' +
+          'I’ve learned the Importance of setting good and secure rules before deploying, because a chain is only as strong as its weakest link.\n'
       },
       {
         id: 3,
