@@ -13,9 +13,16 @@ export class InMemoryDataService implements InMemoryDbService {
         imgThumb: 'assets/img/projects/flutter.png',
         imgOne: 'assets/img/projects/flutter01.png',
         imgTwo: 'assets/img/projects/flutter02.png',
-        description: 'I developed a small fraction of a front end application in Flutter. The back end was created in Java with the Spring Boot' +
-          'framework. These screenshots represents an application to find and book hotels based on location, country, region,..' +
-          'To learn Dart was quite a steep learning curve, especially for the design aspects.'
+        description: 'I developed a small fraction of a front end application in Flutter. The back end was created in Java with the Spring Boot framework. These screenshots represents an application to find and book hotels based on location, country, region,.. \n' +
+          '\n' +
+          'Flutter is an open-source UI software development kit created by Google. \n' +
+          'Its popularity is increasing significantly among application developers because of its use for cross platform development. With this framework it’s possible to create applications for Android, iOS, Windows, Mac, Linux, and the web. Flutter uses Dart as the programming language.\n' +
+          '\n' +
+          'To learn Dart was quite a steep learning curve, especially for the design aspects.\n' +
+          'It took me more time as I expected to understand how a UI was build in it. For this reason, I couldn’t finish the whole project as what I initially envisioned.\n' +
+          '\n' +
+          'I love to combine design and code, and for that reason I want to grow as a full stack developer. Choosing Flutter was a great opportunity to further develop these skills. \n' +
+          'I hope to learn and create more applications like these in my spare time.\n'
       },
       {
         id: 2,
@@ -33,9 +40,13 @@ export class InMemoryDataService implements InMemoryDbService {
         imgThumb: 'assets/img/projects/sonarcloud.png',
         imgOne: 'assets/img/projects/sonar01.png',
         imgTwo: 'assets/img/projects/sonar02.png',
-        description: 'SonarCloud is a tool created for continuous inspection of code quality to perform automatic reviews with static analysis of code to fix bugs and code smells ' +
-          'Jacoco is the intern dependency in Java which does the first analysing and provides this to SonarCloud to create the necessary reports. ' +
-          'SonarCloud is connected to a version of control, in this example Github Actions is used, for those continuous inspection.'
+        description: 'SonarCloud is a tool created for continuous inspection of code quality to perform automatic reviews with static analysis of code to fix bugs and code smells. Jacoco is the dependency in Java which does the first analysing and provides this to SonarCloud to create the necessary reports. SonarCloud is connected to a version of control, for this project I used Github.\n' +
+          '\n' +
+          'The use of this tool surely is a great recommendation for providing quality code. Therefore, I found it important to learn and use this tool. The tool is provided with a lot of good documentation and tutorials on how to do the setup. SonarCloud is quite straightforward on using, creating and modifying conditions to help you know whether your project is ready for production. \n' +
+          '\n' +
+          'By using this tool I’ve learned more about common security issues and how to fix them. It gives you an explanation why some parts of code can create a security issue or why it can create difficulties for maintainability. It taught me why it’s important to use tools like SonarCloud, so you can provide a secure and (almost) bug-free project or feature.\n' +
+          '\n' +
+          'I chose this technology because it’s Important to provide quality code, especially when you’re a developer in a large company. If you’re working with a lot of people on same projects, it’s necessary your code meets certain requirements.\n'
       },
       {
         id: 4,
