@@ -13,6 +13,8 @@ import {MdbCollapseModule, MdbScrollspyModule} from 'mdb-angular-ui-kit';
 import {ActivityComponent} from './components/activity/activity.component';
 import { HomeComponent } from './components/home/home.component';
 import {ModalModule} from 'angular-bootstrap-md';
+import { ReflectieComponent } from './components/reflectie/reflectie.component';
+import { XFactorComponent } from './components/x-factor/x-factor.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import {ModalModule} from 'angular-bootstrap-md';
     HeaderComponent,
     FooterComponent,
     ActivityComponent,
-    HomeComponent
+    HomeComponent,
+    ReflectieComponent,
+    XFactorComponent
   ],
   imports: [
     BrowserModule,
