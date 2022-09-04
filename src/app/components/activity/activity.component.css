@@ -40,3 +40,41 @@
   flex: 33.33%;
   padding: 5px;
 }
+
+.whitespace {
+  white-space: pre-line;
+}
+
+/* Important part */
+.modal-dialog{
+  overflow-y: initial !important
+}
+.modal-body{
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-content-image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.background-transparent{
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.max-height-modal-image {
+  max-height: 550px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-body-image{
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.small {
+  width: 100px;
+}

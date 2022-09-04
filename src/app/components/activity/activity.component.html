@@ -4,9 +4,9 @@
 </div>
 
 <div mdbModal #modal="mdbModal" class="portfolio-modal modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-xl" role="document">
+  <div class="modal-dialog modal-xl overflow" role="document">
     <div class="modal-content">
-      <div class="modal-body text-center">
+      <div class="modal-body text-center body">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -16,11 +16,13 @@
               <!-- Portfolio Modal - Image-->
               <div class="row">
                 <div class="column">
-                  <img class="img-fluid rounded mb-5 max-height-modal extra-padding" src="{{activity.imgOne}}"
+                  <img class="img-fluid rounded mb-5 max-height-modal extra-padding" (click)="modalImage.show()"
+                       src="{{activity.imgOne}}"
                        alt="{{activity.name}}"/>
                 </div>
                 <div class="column">
-                  <img class="img-fluid rounded mb-5 max-height-modal extra-padding" src="{{activity.imgTwo}}"
+                  <img class="img-fluid rounded mb-5 max-height-modal extra-padding" (click)="modalImage2.show()"
+                       src="{{activity.imgTwo}}"
                        alt="{{activity.name}}"/>
                 </div>
                 <div class="column" *ngIf="activity.imgThree != null">
@@ -29,7 +31,7 @@
                 </div>
               </div>
               <!-- Portfolio Modal - Text-->
-              <p class="mb-5">{{activity.description}}</p>
+              <p class="mb-5 whitespace">{{activity.description}}</p>
               <button class="btn btn-primary" data-dismiss="modal" (click)="modal.hide()">
                 <i class="fas fa-times fa-fw"></i>
                 Close Window
@@ -37,6 +39,48 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div mdbModal #modalImage="mdbModal" class="portfolio-modal modal fade" tabindex="-2" role="dialog">
+  <div class="modal-content-image background-transparent">
+    <div class="modal-body-image text-center body">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <img class="img-fluid rounded mb-5 max-height-modal-image"
+                 src="{{activity.imgOne}}"
+                 alt="{{activity.name}}"/>
+          </div>
+        </div>
+        <button class="btn btn-primary" data-dismiss="modalImage" (click)="modalImage.hide()">
+          <i class="fas fa-times fa-fw"></i>
+          Close Window
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div mdbModal #modalImage2="mdbModal" class="portfolio-modal modal fade" tabindex="-2" role="dialog">
+  <div class="modal-content-image background-transparent">
+    <div class="modal-body-image text-center body">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <img class="img-fluid rounded mb-5 max-height-modal-image"
+                 src="{{activity.imgTwo}}"
+                 alt="{{activity.name}}"/>
+          </div>
+        </div>
+        <button class="btn btn-primary" data-dismiss="modalImage2" (click)="modalImage2.hide()">
+          <i class="fas fa-times fa-fw"></i>
+          Close Window
+        </button>
       </div>
     </div>
   </div>

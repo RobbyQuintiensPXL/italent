@@ -9,9 +9,9 @@ import {Activity} from '../../shared/classes/activity';
 export class ActivityComponent implements OnInit {
   @Input() activity: Activity;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
-
 }

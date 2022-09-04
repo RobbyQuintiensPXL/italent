@@ -60,7 +60,11 @@ export class InMemoryDataService implements InMemoryDbService {
         imgThumb: 'assets/img/projects/gh.png',
         imgOne: 'assets/img/projects/GH01.png',
         imgTwo: 'assets/img/projects/GH02.png',
-        description: 'Github Actions was used to create a YAML-file to create continuous inspection for SonarCloud.'
+        description: 'Github Actions was used to create a YAML-file to create continuous inspection for SonarCloud. Github Actions can be compared to Jenkins, they both create workflows using declarative pipelines. \n' +
+          '\n' +
+          'In Github Actions a .yaml file was created, this pipeline contains the steps necessary for connection and interaction with SonarCloud. \n' +
+          '\n' +
+          'I found this tool very useful and interesting. It was a good practice comparing Github Actions with Jenkins.\n'
       },
       {
         id: 5,
@@ -68,10 +72,10 @@ export class InMemoryDataService implements InMemoryDbService {
         imgThumb: 'assets/img/projects/extr.png',
         imgOne: 'assets/img/projects/carShop.png',
         imgTwo: 'assets/img/projects/microservices01.png',
-        description: 'This is a little side-project I am still working on. In this project I make use of ' +
-          'microservices to create a loose coupling of services. For this project I use Consul for creating ' +
-          'a local cloud service mesh and KeyCloak to provide the necessary security. This project represents a ' +
-          'platform for a car dealer, where he/she can easily add new cars.'
+        description: 'This is a little side-project I am still working on. In this project I make use of microservices to create a loose coupling of services. For this project I use Consul for creating \n' +
+          'a local cloud service mesh. KeyCloak is used to provide the necessary security based on the OAuth2.O protocol. The project represents a platform for a car dealer, where he/she can easily add new cars.\n' +
+          '\n' +
+          'I started this side project to combine all the things I learned. Even now, when I read something new about a technology, I try to combine or implement it in this project. For example QueryDSL. QueryDSL is an annotation processing tool, which helps with creating and running type-safe SQL-queries. \n'
       },
     ];
     return {project};
