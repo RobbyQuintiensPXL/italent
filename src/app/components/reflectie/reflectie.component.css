@@ -1,0 +1,7 @@
+.whitespace {
+  white-space: pre-line;
+}
+
+.container, .space {
+  padding-top: 2rem;
+}
