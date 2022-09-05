@@ -35,6 +35,7 @@ jobs:
           source: ./
           destination: ./_site
           jekyll_build_opts: --future
+          timezone: TIMEZONE
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
