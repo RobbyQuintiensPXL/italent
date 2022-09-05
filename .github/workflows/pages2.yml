@@ -34,6 +34,7 @@ jobs:
         with:
           source: ./
           destination: ./_site
+          jekyll_build_opts: --future
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
